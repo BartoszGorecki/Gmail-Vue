@@ -17,7 +17,7 @@ export default {
   computed: {
     sentMessages() {
       return this.data.messages.filter(function(message) {
-        return message.type == "outgoing" && !message.isDeleted;
+        return message.type === "outgoing" && !message.isDeleted;
       });
     }
   },

@@ -78,27 +78,27 @@ export default {
     unreadMessages() {
       return this.messages.filter(function(message) {
         return (
-          message.type == "incoming" && !message.isRead && !message.isDeleted
+          message.type === "incoming" && !message.isRead && !message.isDeleted
         );
       });
     },
     sentMessages() {
       return this.messages.filter(function(message) {
-        return message.type == "outgoing" && !message.isDeleted;
+        return message.type === "outgoing" && !message.isDeleted;
       });
     },
     importantMessages() {
       return this.messages.filter(function(message) {
         return (
-          message.type == "incoming" &&
-          message.isImportant === true &&
+          message.type === "incoming" &&
+          message.isImportant &&
           !message.isDeleted
         );
       });
     },
     trashedMessages() {
       return this.messages.filter(function(message) {
-        return message.isDeleted === true;
+        return message.isDeleted;
       });
     }
   },

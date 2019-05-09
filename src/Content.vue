@@ -40,7 +40,7 @@ export default {
   },
   created() {
     eventBus.$on("changeView", data => {
-      let temp = [
+      const temp = [
         {
           tag: data.tag,
           title: data.title,

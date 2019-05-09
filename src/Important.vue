@@ -19,7 +19,7 @@ export default {
       return this.data.messages.filter(function(message) {
         return (
           message.type == "incoming" &&
-          message.isImportant === true &&
+          message.isImportant &&
           !message.isDeleted
         );
       });

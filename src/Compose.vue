@@ -75,8 +75,8 @@ export default {
           type: "outgoing",
           date: moment(),
           from: {
-            name: "Bo Andersen",
-            email: "info@codingexplained.com"
+            name: "Bartosz Górecki ",
+            email: "uni4444@gmail.com"
           },
           attachments: []
         }

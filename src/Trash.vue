@@ -17,7 +17,7 @@ export default {
   computed: {
     trashedMessages() {
       return this.data.messages.filter(function(message) {
-        return message.isDeleted === true;
+        return message.isDeleted;
       });
     }
   },
